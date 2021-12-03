@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youthree</title>
   </head>
   <body>
-    <h1>Youthree</h1>
+    <div class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide"><h1 >Youthree</h1></div>
 
+    <div class="bg-blue-100">
     <!-- Ordered List of the Weeks - TODO: load 4 weeks initially, and enable loading-while-scrolling-to-end -->
     <ol class="weeks">
       <!-- TODO: Make the Week title column a clickable link that expands/contracts the week's entries -->
@@ -19,14 +24,14 @@
         <!-- Ordered List of the Days of this Week -->
         <ol class="days">
           <li class="day">
-            <!-- Wrapper for the Day: Row1-Title, Row2-3ColEntries   -->
-
-            <div>
-              <header>
-                <h2>Day 1</h2>
+            <!-- container div for a single day, row1: title, row2: 3cols of entries -->
+            <div class="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+              <div class="p-4 font-serif text-gray-800 text-3xl font-semibold "><h2>Day 1 - January 1, 2022</h2></div>
+                
               </header>
 
-              <section class="columns">
+              <!-- div for row 2: 3 columns, 1 for each person -->
+              <div class="flex flex-col sm:flex-row font-sans mt-2 text-gray-600">
                 <div class="column">
                   <h3>Perry's Thoughts</h3>
                   <p>
@@ -43,10 +48,13 @@
                   <h3>Dan's Thoughts</h3>
                   <p>Dan's Thoughts will go here. Who knows what he'd think?</p>
                 </div>
-              </section>
+              </div>
+              >
             </div>
           </li>
+          <!-- end single day -->
 
+          <!-- day 2 -->
           <li class="day">
             <!-- Wrapper for the Day: Row1-Title, Row2-3ColEntries   -->
 
