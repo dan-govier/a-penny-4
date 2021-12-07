@@ -25,31 +25,54 @@
         <ol class="days">
           <li class="day">
             <!-- container div for a single day, row1: title, row2: 3cols of entries -->
-            <div class="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+            <div class="container py-4 px-8 bg-white shadow-lg rounded-lg my-20">
               <div class="p-4 font-serif text-gray-800 text-3xl font-semibold "><h2>Day 1 - January 1, 2022</h2></div>
                 
               </header>
 
               <!-- div for row 2: 3 columns, 1 for each person -->
               <div class="flex flex-col sm:flex-row font-sans mt-2 text-gray-600">
-                <div class="column">
-                  <h3>Perry's Thoughts</h3>
-                  <p>
+                <div class="p-2 column">
+                  <h3 class="font-bold">Perry's Thoughts</h3>
+                  <p class="pt-4">
                     Perry's Thoughts will go here. Who knows what he'd think?
                   </p>
                 </div>
-                <div class="column">
-                  <h3>Dick's Thoughts</h3>
-                  <p>
+                <div class="p-2 column">
+                  <h3 class="font-bold">Dick's Thoughts</h3>
+                  <p class="pt-4">
                     Dick's Thoughts will go here. Who knows what he'd think?
                   </p>
                 </div>
-                <div class="column">
-                  <h3>Dan's Thoughts</h3>
-                  <p>Dan's Thoughts will go here. Who knows what he'd think?</p>
+                <div class="p-2 column">
+                  <h3 class="font-bold">Dan's Thoughts</h3>
+                  <p class="pt-4"><button
+                    class="
+                      text-purple-500
+                      bg-transparent
+                      border border-solid border-purple-500
+                      hover:bg-purple-500 hover:text-white
+                      active:bg-purple-600
+                      font-bold
+                      uppercase
+                      text-xs
+                      px-4
+                      py-2
+                      rounded-full
+                      outline-none
+                      focus:outline-none
+                      mr-1
+                      mb-1
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Write Dan's Entry
+                  </button></p>
                 </div>
               </div>
-              >
             </div>
           </li>
           <!-- end single day -->
